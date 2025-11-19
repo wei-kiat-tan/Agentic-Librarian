@@ -98,8 +98,8 @@ You can delegate tasks, review subagent outputs, and compile comprehensive final
 
 User Request: {user_request}
 
-Document Content Preview (first 12000 chars):
-{document_content[:12000]}
+Document Content Preview (first 5000 chars):
+{document_content[:5000]}
 
 Total document length: {len(document_content)} characters
 
@@ -124,8 +124,14 @@ Guidelines:
 
         response = client.messages.create(
             model=MODEL,
-            max_tokens=40000,
-            system=self.get_system_prompt(),
+            max_tokens=8000,
+            system=[
+                {
+                "type": "text",
+                "text": self.get_system_prompt(),
+                "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{"role": "user", "content": analysis_prompt}]
         )
         
@@ -188,8 +194,14 @@ Instructions:
 
         response = client.messages.create(
             model=MODEL,
-            max_tokens=16000,
-            system=self.get_system_prompt(),
+            max_tokens=8000,
+            system=[
+                {
+                "type": "text",
+                "text": self.get_system_prompt(),
+                "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{"role": "user", "content": compilation_prompt}]
         )
         
@@ -239,7 +251,13 @@ Provide the processed output directly. If you need clarification, clearly state 
         response = client.messages.create(
             model=MODEL,
             max_tokens=8000,
-            system=self.get_system_prompt(),
+            system=[
+                {
+                "type": "text",
+                "text": self.get_system_prompt(),
+                "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{"role": "user", "content": prompt}]
         )
         
@@ -303,7 +321,13 @@ Provide the processed output directly. If you need clarification, clearly state 
         response = client.messages.create(
             model=MODEL,
             max_tokens=8000,
-            system=self.get_system_prompt(),
+            system=[
+                {
+                "type": "text",
+                "text": self.get_system_prompt(),
+                "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{"role": "user", "content": prompt}]
         )
         
@@ -372,7 +396,13 @@ Generate the requested table. If you need clarification about table structure, c
         response = client.messages.create(
             model=MODEL,
             max_tokens=8000,
-            system=self.get_system_prompt(),
+            system=[
+                {
+                "type": "text",
+                "text": self.get_system_prompt(),
+                "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{"role": "user", "content": prompt}]
         )
         

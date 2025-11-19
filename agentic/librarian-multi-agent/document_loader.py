@@ -39,7 +39,7 @@ class DocumentLoader:
             Dictionary with content, page_count, and metadata
         """
         try:
-            import PyPDF2
+            import PyPDF2 # you need to install PyPDF2 if not already installed
         except ImportError:
             raise ImportError(
                 "PyPDF2 is required for PDF processing. "
@@ -82,7 +82,7 @@ class DocumentLoader:
             Dictionary with content, paragraph_count, and metadata
         """
         try:
-            from docx import Document
+            from docx import Document # you need to install python-docx if not already installed
         except ImportError:
             raise ImportError(
                 "python-docx is required for DOCX processing. "
