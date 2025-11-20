@@ -1,8 +1,8 @@
 # Librarian Agents Team - Project Summary
 
-## 📦 What You Have
+## 📦 About
 
-A complete, production-ready multi-agent system for processing large documents (50-5000+ pages) using Python and Claude Sonnet 4.5.
+A multi-agent system for processing large documents (50-5000+ pages) using Python and Claude to overcome LLM limitations of limited context window by dividing the task to multiple agents and save precious time for the user in reading these documents.
 
 ## 🎯 Core Components
 
@@ -55,6 +55,15 @@ A complete, production-ready multi-agent system for processing large documents (
    - Component details
    - Design principles
 
+10. **USAGE_GUIDE.md**
+    - how to use the files and script
+
+11. **PROJECT_SUMMARY.md**
+    - Exective summary of this project
+
+12. **EXECUTION_FLOW.md**
+    - Visual Diagram of workflow
+
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
@@ -63,9 +72,19 @@ pip install anthropic --break-system-packages
 ```
 
 ### 2. Set API Key
+
+Linux/Mac
 ```bash
 export ANTHROPIC_API_KEY='your-api-key-here'
 ```
+
+Windows
+```bash
+set ANTHROPIC_API_KEY='your-api-key-here'
+```
+OR
+
+Search for Edit the system environment variables and set your ANTHROPIC_API_KEY directly.
 
 ### 3. Use It
 
@@ -187,22 +206,6 @@ DocumentSaver.save_to_docx(result, "output.docx")
 - **Context Window**: 190K tokens per agent
 - **Quality**: Claude Sonnet 4.5 (highest quality)
 
-## 🛠️ File Structure
-
-```
-Your Files:
-├── librarian_agents_team.py    ⭐ Main system
-├── cli.py                      📱 Command-line interface
-├── document_chunker.py         ✂️ Chunking utilities
-├── document_loader.py          📂 File loading
-├── advanced_examples.py        📚 Examples
-├── test_example.py            🧪 Test suite
-├── README.md                   📖 Full docs
-├── QUICKSTART.md              🚀 Quick start
-├── ARCHITECTURE.md            🏗️ Architecture
-└── PROJECT_SUMMARY.md         📋 This file
-```
-
 ## ✅ Production Ready
 
 This system is:
@@ -246,7 +249,7 @@ This system is:
 ## 🆘 Support
 
 **Common Issues:**
-- API Key: `export ANTHROPIC_API_KEY='your-key'`
+- API Key not set: `export ANTHROPIC_API_KEY='your-key'` or `set ANTHROPIC_API_KEY into system environment variables for windows`
 - File not found: Use absolute paths
 - Install errors: Use `--break-system-packages` flag
 
@@ -255,14 +258,3 @@ This system is:
 - Examples in advanced_examples.py
 - Architecture in ARCHITECTURE.md
 
-## 📞 Contact
-
-For questions or issues with Anthropic API, visit:
-- https://docs.anthropic.com
-- https://support.claude.com
-
----
-
-**You're all set! Start processing documents! 🎉**
-
-Built with ❤️ using Claude Sonnet 4.5
