@@ -1,4 +1,0 @@
-# Requirements for Documentation Explainer Agent Team
-# Install with: pip install -r requirements.txt --break-system-packages
-
-anthropic>=0.39.0
