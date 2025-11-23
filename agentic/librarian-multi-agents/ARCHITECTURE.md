@@ -8,15 +8,15 @@ The Librarian Agents Team is a multi-agent system designed for intelligent docum
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         USER INPUT                               │
+│                         USER INPUT                              │
 │  • Document (50 - 5000+ pages)                                  │
-│  • Processing Request/Instructions                               │
+│  • Processing Request/Instructions                              │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                   LEAD ORCHESTRATOR AGENT                        │
-│                                                                  │
+│                   LEAD ORCHESTRATOR AGENT                       │
+│                                                                 │
 │  Responsibilities:                                              │
 │  ✓ Analyze user request                                        │
 │  ✓ Create task breakdown                                       │
@@ -24,7 +24,7 @@ The Librarian Agents Team is a multi-agent system designed for intelligent docum
 │  ✓ Manage context window (190K tokens)                         │
 │  ✓ Compile final results                                       │
 │  ✓ Handle continuation prompts                                 │
-│                                                                  │
+│                                                                 │
 │  Model: Claude Sonnet 4.5                                       │
 └───────┬──────────────────┬──────────────────┬──────────────────┘
         │                  │                  │

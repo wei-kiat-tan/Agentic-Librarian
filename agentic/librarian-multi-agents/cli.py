@@ -4,9 +4,7 @@ Librarian Agents Team - Command Line Interface
 Easy-to-use CLI for document processing
 """
 
-import argparse
-import sys
-import os
+import argparse, sys, os
 from pathlib import Path
 
 from librarian_agents_team import LibrarianAgentsTeam
