@@ -1631,3 +1631,28 @@ python combine_results.py                 # Automated merging ✅
 **Version:** 1.4  
 **Last Updated:** November 24, 2024  
 **Model Support:** Claude Haiku 4.5 / Sonnet 4.5
+
+---
+
+**Version History**
+
+Version 1.3
+
+1. Introduced Prompt Caching for message for cost savings purpose
+2. Updated Readme document
+
+Version 1.2
+
+1. Changed Agent parameters, including system instructions, token size window
+2. Changed Model from Sonnet 4.5 to Haiku 4.5
+3. Cleaned up librarian_agents_team script; removed example in the script
+4. Introduced new execution flow, usage guide and project summary markdown files
+
+Version 1.1
+
+1. Adjusted librarian_agents_team.py script content
+2. Updated Readme document on quitting session
+
+Version 1.0
+
+1. Files uploaded to GitHub
