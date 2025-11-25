@@ -86,7 +86,7 @@ The Librarian Agents Team is a multi-agent document processing system, intellige
 │                    UTILITY LAYER                            │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  document_loader.py (✅ Auto-used by CLI)                  │
+│  document_loader.py (✅ Auto-used by CLI)                   │
 │  - Loads PDF, DOCX, TXT, HTML, MD                           │
 │  - Extracts text content                                    │
 │  - Automatically called by CLI                              │
@@ -923,14 +923,14 @@ python combine_results.py
 │ 1. Create chunk_large_doc.py (20 lines)                  │
 │ 2. Create combine_results.py (15 lines)                  │
 │                                                          │
-│ ✅ Do this once, reuse forever                          │
+│ ✅ Do this once, reuse forever                           │
 └──────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────┐
 │ FOR EACH LARGE DOCUMENT                                  │
 ├──────────────────────────────────────────────────────────┤
 │ Step 1: python chunk_large_doc.py file.pdf               │
-│         └─> Uses automated chunking algorithms ✅       │
+│         └─> Uses automated chunking algorithms ✅        │
 │                                                          │
 │ Step 2: python cli.py -i chunk_0.txt --interactive       │
 │         [Save as result_0.txt]                           │
@@ -942,7 +942,7 @@ python combine_results.py
 │         [Save as result_2.txt]                           │
 │                                                          │
 │ Step 5: python combine_results.py                        │
-│         └─> Automated merging with headers ✅           │
+│         └─> Automated merging with headers ✅            │
 └──────────────────────────────────────────────────────────┘
 ```
 
