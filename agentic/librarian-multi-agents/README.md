@@ -1,4 +1,4 @@
-# Librarian Agents Team - Document Processing System
+# Librarian Agents Team - Document Processing System (Outdated)
 
 A sophisticated multi-agent system built with Python and Claude for intelligently processing large documents (50 to thousands of pages). The system uses a lead orchestrator and three specialized sub-agents to break down, analyze, and transform document content.
 
